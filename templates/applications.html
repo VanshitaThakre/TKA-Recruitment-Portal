@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Applications - RPMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>RPMS Portal</h2>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('candidates') }}">Candidates</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('jobs') }}">Job Openings</a></li>
+            <li class="active"><a href="{{ url_for('applications') }}">Applications</a></li>
+            <li><a href="{{ url_for('interviews') }}">Interviews</a></li>
+            <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Application Pipeline (Total: 10)</h1>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>App Code</th>
+                        <th>Candidate Name</th>
+                        <th>Applied Company</th>
+                        <th>Job Title</th>
+                        <th>Applied Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>APP-1001</td>
+                        <td>Rahul Patil</td>
+                        <td>Infosys Ltd</td>
+                        <td>Associate Java Developer</td>
+                        <td>01-Nov-2026</td>
+                        <td><span class="badge badge-open">ELIGIBLE</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1002</td>
+                        <td>Sneha Deshmukh</td>
+                        <td>TCS</td>
+                        <td>Python Scripting Engineer</td>
+                        <td>02-Nov-2026</td>
+                        <td><span class="badge badge-active">SHORTLISTED</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1003</td>
+                        <td>Amit Kumar</td>
+                        <td>Wipro</td>
+                        <td>Database Administrator</td>
+                        <td>02-Nov-2026</td>
+                        <td><span class="badge badge-pending">PENDING</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1004</td>
+                        <td>Pooja Sharma</td>
+                        <td>Infosys Ltd</td>
+                        <td>Associate Java Developer</td>
+                        <td>03-Nov-2026</td>
+                        <td><span class="badge badge-active">SHORTLISTED</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1005</td>
+                        <td>Vanshita Thakre</td>
+                        <td>TCS</td>
+                        <td>Python Scripting Engineer</td>
+                        <td>03-Nov-2026</td>
+                        <td><span class="badge badge-open">ELIGIBLE</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1006</td>
+                        <td>Rohan Verma</td>
+                        <td>Tech Mahindra</td>
+                        <td>Backend Developer</td>
+                        <td>03-Nov-2026</td>
+                        <td><span class="badge badge-open">ELIGIBLE</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1007</td>
+                        <td>Neha Shinde</td>
+                        <td>Cognizant</td>
+                        <td>Python Developer</td>
+                        <td>04-Nov-2026</td>
+                        <td><span class="badge badge-pending">PENDING</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1008</td>
+                        <td>Akash Gawande</td>
+                        <td>Capgemini</td>
+                        <td>Java Spring Boot Engineer</td>
+                        <td>04-Nov-2026</td>
+                        <td><span class="badge badge-active">SHORTLISTED</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1009</td>
+                        <td>Kajal Meshram</td>
+                        <td>Wipro</td>
+                        <td>SQL Analyst</td>
+                        <td>04-Nov-2026</td>
+                        <td><span class="badge badge-open">ELIGIBLE</span></td>
+                    </tr>
+                    <tr>
+                        <td>APP-1010</td>
+                        <td>Saurabh Kale</td>
+                        <td>LTI Mindtree</td>
+                        <td>Full Stack Trainee</td>
+                        <td>05-Nov-2026</td>
+                        <td><span class="badge badge-active">SHORTLISTED</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

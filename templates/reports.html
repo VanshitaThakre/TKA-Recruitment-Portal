@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports - RPMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>RPMS Portal</h2>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('candidates') }}">Candidates</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('jobs') }}">Job Openings</a></li>
+            <li><a href="{{ url_for('applications') }}">Applications</a></li>
+            <li><a href="{{ url_for('interviews') }}">Interviews</a></li>
+            <li class="active"><a href="{{ url_for('reports') }}">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Management & Placement Reports</h1>
+        </div>
+
+        <!-- Summary Cards matching Dashboard metrics -->
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Total Candidates</h3>
+                <div class="number">10</div>
+            </div>
+            <div class="card">
+                <h3>Total Applications</h3>
+                <div class="number">10</div>
+            </div>
+            <div class="card">
+                <h3>Scheduled Interviews</h3>
+                <div class="number">06</div>
+            </div>
+            <div class="card">
+                <h3>Selected Candidates</h3>
+                <div class="number">04</div>
+            </div>
+        </div>
+
+        <!-- Selected Candidate Verification Table -->
+        <div class="table-container" style="margin-bottom: 30px;">
+            <h3>Verified Selection Audit (Dashboard Aligned)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Candidate Code</th>
+                        <th>Candidate Name</th>
+                        <th>Company</th>
+                        <th>Applied Role</th>
+                        <th>Interview Stage</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CAN-2026-0001</td>
+                        <td>Rahul Patil</td>
+                        <td>Infosys Ltd</td>
+                        <td>Associate Java Developer</td>
+                        <td>Technical Round</td>
+                        <td><span class="badge badge-active">SELECTED</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0005</td>
+                        <td>Vanshita Thakre</td>
+                        <td>TCS</td>
+                        <td>Python Scripting Engineer</td>
+                        <td>Technical Round</td>
+                        <td><span class="badge badge-open">IN PIPELINE</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Company Placement Activity Table -->
+        <div class="table-container">
+            <h3>Company-wise Pipeline Summary</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company Name</th>
+                        <th>Location</th>
+                        <th>Job Title</th>
+                        <th>Openings</th>
+                        <th>Applications</th>
+                        <th>Selections</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Infosys Ltd</td>
+                        <td>Pune</td>
+                        <td>Associate Java Developer</td>
+                        <td>15</td>
+                        <td>2</td>
+                        <td>1 (Rahul Patil)</td>
+                    </tr>
+                    <tr>
+                        <td>TCS</td>
+                        <td>Hyderabad</td>
+                        <td>Python Scripting Engineer</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>0 (Pipeline)</td>
+                    </tr>
+                    <tr>
+                        <td>Wipro</td>
+                        <td>Nagpur</td>
+                        <td>Database Administrator</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>0 (Pipeline)</td>
+                    </tr>
+                    <tr>
+                        <td>Tech Mahindra</td>
+                        <td>Pune</td>
+                        <td>Backend Developer</td>
+                        <td>12</td>
+                        <td>1</td>
+                        <td>0 (Pipeline)</td>
+                    </tr>
+                    <tr>
+                        <td>Cognizant</td>
+                        <td>Hyderabad</td>
+                        <td>Python Developer</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>0 (Pipeline)</td>
+                    </tr>
+                    <tr>
+                        <td>Capgemini</td>
+                        <td>Nashik</td>
+                        <td>Java Spring Boot Engineer</td>
+                        <td>14</td>
+                        <td>1</td>
+                        <td>0 (Pipeline)</td>
+                    </tr>
+                    <tr>
+                        <td>LTI Mindtree</td>
+                        <td>Pune</td>
+                        <td>Full Stack Trainee</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>0 (Pipeline)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

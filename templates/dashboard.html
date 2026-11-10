@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - RPMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>RPMS Portal</h2>
+        <ul>
+           <li class="active"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('candidates') }}">Candidates</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('jobs') }}">Job Openings</a></li>
+            <li><a href="{{ url_for('applications') }}">Applications</a></li>
+            <li><a href="{{ url_for('interviews') }}">Interviews</a></li>
+            <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Dashboard Overview</h1>
+            <span>Welcome, Recruiter</span>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Total Candidates</h3>
+                <div class="number">10</div>
+            </div>
+            <div class="card">
+                <h3>Companies</h3>
+                <div class="number">15</div>
+            </div>
+            <div class="card">
+                <h3>Job Openings</h3>
+                <div class="number">12</div>
+            </div>
+            <div class="card">
+                <h3>Total Applications</h3>
+                <div class="number">40</div>
+            </div>
+            <div class="card">
+                <h3>Scheduled Interviews</h3>
+                <div class="number">30</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h3>Recent System Activity</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activity ID</th>
+                        <th>Candidate</th>
+                        <th>Action</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ACT-101</td>
+                        <td>Vanshita Thakre</td>
+                        <td>Applied for Java Developer</td>
+                        <td><span class="badge badge-open">APPLIED</span></td>
+                    </tr>
+                    <tr>
+                        <td>ACT-102</td>
+                        <td>Rahul Patil</td>
+                        <td>Technical Interview Completed</td>
+                        <td><span class="badge badge-active">SELECTED</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

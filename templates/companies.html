@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Companies - RPMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>RPMS Portal</h2>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('candidates') }}">Candidates</a></li>
+            <li class="active"><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('jobs') }}">Job Openings</a></li>
+            <li><a href="{{ url_for('applications') }}">Applications</a></li>
+            <li><a href="{{ url_for('interviews') }}">Interviews</a></li>
+            <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Companies Master</h1>
+            <a href="#" class="btn-primary">+ Add Company</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company Code</th>
+                        <th>Company Name</th>
+                        <th>Industry</th>
+                        <th>Location</th>
+                        <th>HR Contact</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in companies %}
+                    <tr>
+                        <td>{{ row.company_code }}</td>
+                        <td>{{ row.company_name }}</td>
+                        <td>{{ row.industry }}</td>
+                        <td>{{ row.location }}</td>
+                        <td>{{ row.hr_contact }}</td>
+                        <td><span class="badge badge-active">{{ row.status }}</span></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

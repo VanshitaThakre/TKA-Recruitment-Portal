@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interviews - RPMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>RPMS Portal</h2>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('candidates') }}">Candidates</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('jobs') }}">Job Openings</a></li>
+            <li><a href="{{ url_for('applications') }}">Applications</a></li>
+            <li class="active"><a href="{{ url_for('interviews') }}">Interviews</a></li>
+            <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Scheduled Interviews (Total: 10)</h1>
+            <a href="#" class="btn-primary">+ Schedule Round</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Interview ID</th>
+                        <th>Candidate</th>
+                        <th>Round Type</th>
+                        <th>Date & Time</th>
+                        <th>Mode</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>INT-201</td>
+                        <td>Rahul Patil</td>
+                        <td>Technical Round</td>
+                        <td>05-Nov-2026 11:00 AM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-scheduled">SCHEDULED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-202</td>
+                        <td>Sneha Deshmukh</td>
+                        <td>Aptitude Test</td>
+                        <td>06-Nov-2026 02:00 PM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-selected">COMPLETED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-203</td>
+                        <td>Pooja Sharma</td>
+                        <td>Technical Round</td>
+                        <td>06-Nov-2026 03:30 PM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-scheduled">SCHEDULED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-204</td>
+                        <td>Vanshita Thakre</td>
+                        <td>Technical Round</td>
+                        <td>07-Nov-2026 10:30 AM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-selected">COMPLETED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-205</td>
+                        <td>Rohan Verma</td>
+                        <td>HR Round</td>
+                        <td>07-Nov-2026 01:00 PM</td>
+                        <td>OFFLINE</td>
+                        <td><span class="badge badge-selected">COMPLETED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-206</td>
+                        <td>Neha Shinde</td>
+                        <td>Aptitude Test</td>
+                        <td>08-Nov-2026 11:30 AM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-scheduled">SCHEDULED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-207</td>
+                        <td>Akash Gawande</td>
+                        <td>Managerial Round</td>
+                        <td>08-Nov-2026 04:00 PM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-scheduled">SCHEDULED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-208</td>
+                        <td>Kajal Meshram</td>
+                        <td>Technical Round</td>
+                        <td>09-Nov-2026 10:00 AM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-scheduled">SCHEDULED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-209</td>
+                        <td>Saurabh Kale</td>
+                        <td>Technical Round</td>
+                        <td>09-Nov-2026 02:30 PM</td>
+                        <td>OFFLINE</td>
+                        <td><span class="badge badge-selected">COMPLETED</span></td>
+                    </tr>
+                    <tr>
+                        <td>INT-210</td>
+                        <td>Amit Kumar</td>
+                        <td>HR Round</td>
+                        <td>10-Nov-2026 12:00 PM</td>
+                        <td>ONLINE</td>
+                        <td><span class="badge badge-scheduled">SCHEDULED</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

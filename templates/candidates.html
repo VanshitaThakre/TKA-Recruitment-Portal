@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidates - RPMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>RPMS Portal</h2>
+        <ul>
+           <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li class="active"><a href="candidates.html">Candidates</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('jobs') }}">Job Openings</a></li>
+            <li><a href="{{ url_for('applications') }}">Applications</a></li>
+            <li><a href="{{ url_for('interviews') }}">Interviews</a></li>
+            <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Candidates (Total: 10)</h1>
+            <a href="#" class="btn-primary">+ Add Candidate</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Full Name</th>
+                        <th>Qualification</th>
+                        <th>Passing Year</th>
+                        <th>Primary Tech</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CAN-2026-0001</td>
+                        <td>Rahul Patil</td>
+                        <td>B.E. (ETC)</td>
+                        <td>2026</td>
+                        <td>Java</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0002</td>
+                        <td>Sneha Deshmukh</td>
+                        <td>B.Tech (CSE)</td>
+                        <td>2026</td>
+                        <td>Python</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0003</td>
+                        <td>Amit Kumar</td>
+                        <td>MCA</td>
+                        <td>2025</td>
+                        <td>SQL / Spring Boot</td>
+                        <td><span class="badge badge-pending">ON HOLD</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0004</td>
+                        <td>Pooja Sharma</td>
+                        <td>B.E. (IT)</td>
+                        <td>2026</td>
+                        <td>Java</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0005</td>
+                        <td>Vanshita Thakre</td>
+                        <td>B.E. (ETC)</td>
+                        <td>2026</td>
+                        <td>Python / SQL</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0006</td>
+                        <td>Rohan Verma</td>
+                        <td>B.Tech</td>
+                        <td>2025</td>
+                        <td>Java</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0007</td>
+                        <td>Neha Shinde</td>
+                        <td>MCA</td>
+                        <td>2026</td>
+                        <td>Python</td>
+                        <td><span class="badge badge-pending">ON HOLD</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0008</td>
+                        <td>Akash Gawande</td>
+                        <td>B.E. (CSE)</td>
+                        <td>2025</td>
+                        <td>Spring Boot</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0009</td>
+                        <td>Kajal Meshram</td>
+                        <td>B.Sc (IT)</td>
+                        <td>2026</td>
+                        <td>SQL</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                    <tr>
+                        <td>CAN-2026-0010</td>
+                        <td>Saurabh Kale</td>
+                        <td>B.Tech</td>
+                        <td>2025</td>
+                        <td>Java</td>
+                        <td><span class="badge badge-active">ACTIVE</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Openings - RPMS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>RPMS Portal</h2>
+        <ul>
+           <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('candidates') }}">Candidates</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li class="active"><a href="{{ url_for('jobs') }}">Job Openings</a></li>
+            <li><a href="{{ url_for('applications') }}">Applications</a></li>
+            <li><a href="{{ url_for('interviews') }}">Interviews</a></li>
+            <li><a href="{{ url_for('reports') }}">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Job Requirements (Total Open: 12)</h1>
+            <a href="#" class="btn-primary">+ Create Job Opening</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Job Code</th>
+                        <th>Company</th>
+                        <th>Position Title</th>
+                        <th>Openings</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JOB-2026-001</td>
+                        <td>Infosys Ltd</td>
+                        <td>Associate Java Developer</td>
+                        <td>15</td>
+                        <td>Pune</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-002</td>
+                        <td>TCS</td>
+                        <td>Python Scripting Engineer</td>
+                        <td>10</td>
+                        <td>Hyderabad</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-003</td>
+                        <td>Wipro</td>
+                        <td>Database Administrator</td>
+                        <td>8</td>
+                        <td>Nagpur</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-004</td>
+                        <td>Tech Mahindra</td>
+                        <td>Backend Developer</td>
+                        <td>12</td>
+                        <td>Pune</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-005</td>
+                        <td>Cognizant</td>
+                        <td>Python Developer</td>
+                        <td>20</td>
+                        <td>Hyderabad</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-006</td>
+                        <td>Capgemini</td>
+                        <td>Java Spring Boot Engineer</td>
+                        <td>14</td>
+                        <td>Nashik</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-007</td>
+                        <td>LTI Mindtree</td>
+                        <td>Full Stack Trainee</td>
+                        <td>10</td>
+                        <td>Pune</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-008</td>
+                        <td>HCL Technologies</td>
+                        <td>Software Engineer</td>
+                        <td>25</td>
+                        <td>Nagpur</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-009</td>
+                        <td>Accenture</td>
+                        <td>Application Development Associate</td>
+                        <td>30</td>
+                        <td>Hyderabad</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-010</td>
+                        <td>IBM India</td>
+                        <td>Cloud Support Engineer</td>
+                        <td>6</td>
+                        <td>Pune</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-011</td>
+                        <td>Persistent Systems</td>
+                        <td>Core Java Developer</td>
+                        <td>10</td>
+                        <td>Nagpur</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                    <tr>
+                        <td>JOB-2026-012</td>
+                        <td>Deloitte</td>
+                        <td>Risk & Financial Analyst</td>
+                        <td>8</td>
+                        <td>Hyderabad</td>
+                        <td><span class="badge badge-open">OPEN</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
